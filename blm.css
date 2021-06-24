@@ -1,0 +1,105 @@
+body{
+    background: linear-gradient(to right , red ,yellow);
+}
+.tt {
+    display: flex;
+    justify-content: center;
+}
+@keyframes change {
+    0%{ color:royalblue ,text-shadow : 4px 3px #d84e98 , text-decoration-color: chartreuse ;}
+    25% {
+        color : greenyellow , text-shadow : 4px 3px gold , text-decoration-color : silver ;
+    }
+    50% {
+        color : purple , text-shadow : 4px 3px white , text-decoration-color : blue ;
+    }
+    100% {
+        color : cyan , text-shadow : 4px 3px black , text-decoration-color : hotpink ;
+    }
+    
+}
+h1 {
+    font-size: 50px;
+    font-family: cursive;
+    color: royalblue;
+    transition: all 0.3s;
+    text-shadow: 4px 3px #d84e98;
+    text-decoration: underline;
+    text-decoration-color: chartreuse;
+    animation-name: change;
+    animation-duration: 2s;
+}
+
+.page {
+    margin-top: 70px;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.list {
+    margin-top: 34px;
+    margin-bottom: 20px;
+}
+.picker {
+    align-self: center ;
+}
+#text {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#text::placeholder {
+    text-align: center;
+    color: rgb(152, 140, 209);
+    
+}
+#text:focus::placeholder {
+    color: transparent;
+}
+#btn {
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    background : black;
+    width: 70px;
+    height: 40px;
+    transition: all 0.2s ;
+    
+}
+ #btn:hover {
+     background-color: skyblue;
+     color: red;
+     border-radius: 15px ;
+     transform: scale(1.05);
+ }
+#text {
+    height: 38px;
+    width: 200px;
+    border-radius: 18px;
+    font-size: 20px;
+    margin-right: 10px;
+    box-shadow: 2px 2px 2px 6px gold ;
+}
+li {
+    color: gray;
+    height: 40px;
+    font-size: 24px;
+    text-shadow: 3px 3px 2px #0000FF,
+                 3px 2px 2px red  ;
+}
+li:hover {
+    color: red;
+}
+#c1 {
+    margin-right: 40px;
+}
+#c1 , #c2 {
+    transition: all 0.4s;
+}
+#c1:hover , #c2:hover {
+    transform: scale(1.2);
+}
